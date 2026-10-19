@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F8FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- JUDUL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Form Pendaftaran"
+            android:textColor="#202124"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="28dp"
+            android:text="Silakan lengkapi data diri Anda"
+            android:textColor="#6B7280"
+            android:textSize="15sp" />
+
+        <!-- NAMA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="#202124"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:background="#FFFFFF"
+            android:hint="Masukkan nama lengkap"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#202124"
+            android:textColorHint="#9CA3AF"
+            android:textSize="16sp" />
+
+        <!-- JENIS KELAMIN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="#202124"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgJk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Perempuan"
+                android:textColor="#374151"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <!-- KOTA ASAL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kota Asal"
+            android:textColor="#202124"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spKota"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:background="#FFFFFF" />
+
+        <!-- HOBI (CHECKBOXES TAMBAHAN) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobi (Pilih yang sesuai)"
+            android:textColor="#202124"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="22dp">
+
+            <CheckBox
+                android:id="@+id/cbCoding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coding / Pemrograman"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desain UI/UX"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbGaming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bermain Game"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- SYARAT & KETENTUAN -->
+        <Switch
+            android:id="@+id/swMenyetujui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Saya menyetujui Syarat &amp; Ketentuan"
+            android:textColor="#374151"
+            android:textSize="15sp" />
+
+        <!-- BUTTON SIMPAN -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Simpan &amp; Kirim Pendaftaran"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

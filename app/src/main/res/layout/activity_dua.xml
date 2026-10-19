@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F7F8FA">
+
+    <!-- ==================== JUDUL ==================== -->
+
+    <TextView
+        android:id="@+id/txtHasilPendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hasil Pendaftaran"
+        android:textColor="#202124"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Data pendaftaran Anda"
+        android:textColor="#6B7280"
+        android:textSize="15sp" />
+
+
+    <!-- ==================== PROGRESS ==================== -->
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:indeterminate="true" />
+
+
+    <!-- ==================== HASIL (DIBUNGKUS SCROLLVIEW AGAR BISA DIGULIR JIKA PANJANG) ==================== -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:text="Data pendaftaran belum tersedia"
+            android:textColor="#374151"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp" />
+
+    </ScrollView>
+
+
+    <!-- ==================== BUTTON KEMBALI ==================== -->
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Kembali ke Form"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</LinearLayout>
